@@ -1,0 +1,109 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="HerstellingWeb.Master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Media Markt</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="Content/bootstrap.min.css" rel="stylesheet">
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="d-flex flex-column">
+<form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+        <Scripts>
+            <asp:ScriptReference Name="jquery"/>
+            <asp:ScriptReference Name="popper"/>
+            <asp:ScriptReference Name="bootstrap"/>
+        </Scripts>
+    </asp:ScriptManager>
+    <!-- Navigation -->
+    <asp:LoginView ID="LoginView1" runat="server">
+        <AnonymousTemplate>
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-danger">
+                <a class="navbar-brand">
+                    <img class="logo" src="../img/Img/Media_Markt_logo.png.png"; style="height: 50px; width: 200px;"/>
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="btn btn btn-light" style="margin-left: 10px"href="#welkom">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn btn-light" style="margin-left: 10px" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-primary" style="margin-left: 10px" href="Account/Login.aspx">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+
+        </AnonymousTemplate>
+        <LoggedInTemplate>
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-danger fixed-top">
+                <a class="navbar-brand">
+                    <img class="logo" src="../img/Img/Media_Markt_logo.png.png" style="height: 50px; width: 200px;"/>
+                </a>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="btn btn btn-light" style="margin-left: 10px" href="../Default.aspx">Homepage</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Maak je keuze</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" runat="server" href="~/Users/Klant.aspx">Klanten</a>
+                            <a class="dropdown-item" runat="server" href="~/Users/Toestel.aspx">Toestellen</a>
+                            <a class="dropdown-item" runat="server" href="~/Users/Herstelling.aspx">Herstellingen</a>
+                        </div>
+                    </li>
+                    
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" runat="server" href="#">
+                            Welkom,
+                            <asp:LoginName ID="LoginName1" runat="server"/>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <asp:LoginStatus class="nav-link btn btn-outline-dark btn-sm" ID="LoginStatus1" runat="server" OnLoggingOut="LoginStatus1_LoggingOut"/>
+                    </li>
+                </ul>
+            </nav>
+        </LoggedInTemplate>
+    </asp:LoginView>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+
+    <footer class="py-5" style="background-color: #1d1d1b; width: 100%">
+        <div class="container">
+            <div class=" text-center text-light">Copyright &copy; 2020 - David Pietrzak</div>
+        </div>
+    </footer>
+
+    <!-- /Footer -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</form>
+</body>
+</html>

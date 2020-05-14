@@ -1,0 +1,12 @@
+C:\Users\Dom\Desktop\MediaMarktHerstelling\MediaMarktHerstelling\bin\Release\MediaMarktHerstelling.dll
+C:\Users\Dom\Desktop\MediaMarktHerstelling\MediaMarktHerstelling\bin\Release\MediaMarktHerstelling.pdb
+C:\Users\Dom\Desktop\MediaMarktHerstelling\MediaMarktHerstelling\bin\Release\MySql.Data.dll
+C:\Users\Dom\Desktop\MediaMarktHerstelling\MediaMarktHerstelling\bin\Release\Google.Protobuf.dll
+C:\Users\Dom\Desktop\MediaMarktHerstelling\MediaMarktHerstelling\bin\Release\BouncyCastle.Crypto.dll
+C:\Users\Dom\Desktop\MediaMarktHerstelling\MediaMarktHerstelling\bin\Release\Ubiety.Dns.Core.dll
+C:\Users\Dom\Desktop\MediaMarktHerstelling\MediaMarktHerstelling\bin\Release\Renci.SshNet.dll
+C:\Users\Dom\Desktop\MediaMarktHerstelling\MediaMarktHerstelling\bin\Release\MySql.Data.xml
+C:\Users\Dom\Desktop\MediaMarktHerstelling\MediaMarktHerstelling\obj\Release\MediaMarktHerstelling.csproj.CoreCompileInputs.cache
+C:\Users\Dom\Desktop\MediaMarktHerstelling\MediaMarktHerstelling\obj\Release\MediaMarktHerstelling.csproj.CopyComplete
+C:\Users\Dom\Desktop\MediaMarktHerstelling\MediaMarktHerstelling\obj\Release\MediaMarktHerstelling.dll
+C:\Users\Dom\Desktop\MediaMarktHerstelling\MediaMarktHerstelling\obj\Release\MediaMarktHerstelling.pdb
